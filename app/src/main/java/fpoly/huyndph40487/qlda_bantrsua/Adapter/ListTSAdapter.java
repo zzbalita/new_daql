@@ -65,6 +65,13 @@ public class ListTSAdapter extends BaseAdapter {
         TextView view1 = view.findViewById(R.id.tvname);
         TextView view2 = view.findViewById(R.id.tvGia);
         ImageView view3 = view.findViewById(R.id.imgview);
+
+        view3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         Log.e("EEEEEEEEEEEE", "getView: " + product.getImg() );
         view1.setText(product.getName());
         view2.setText(String.valueOf(product.getGia()));
@@ -77,6 +84,8 @@ public class ListTSAdapter extends BaseAdapter {
                 )
                 .into(view3);
         return view;
+
+
     }
 
 }

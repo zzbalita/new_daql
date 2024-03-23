@@ -20,12 +20,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize">
             </androidx.appcompat.widget.Toolbar>
-            <ViewFlipper
-                android:id="@+id/viewflipper"
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
                 android:layout_width="match_parent"
+                android:background="#E1D186"
                 android:layout_height="200dp">
 
-            </ViewFlipper>
+            </androidx.viewpager.widget.ViewPager>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
