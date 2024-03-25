@@ -1,19 +1,18 @@
 package fpoly.huyndph40487.qlda_bantrsua.Model;
 
-public class Product {
-    private int id;
+public class QL_Product {
     private String name;
     private int gia;
+    private int soluong;
 
-    private String img;
-
-    public Product(int id, String name, int gia, String img) {
-        this.id = id;
-        this.name = name;
-        this.gia = gia;
-        this.img = img;
+    public QL_Product() {
     }
 
+    public QL_Product(String name, int gia, int soluong) {
+        this.name = name;
+        this.gia = gia;
+        this.soluong = soluong;
+    }
 
     public String getName() {
         return name;
@@ -31,20 +30,11 @@ public class Product {
         this.gia = gia;
     }
 
-    public String getImg() {
-        return img;
+    public int getSoluong() {
+        return soluong;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setSoluong(int soluong) {
+        this.soluong = soluong;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
 }

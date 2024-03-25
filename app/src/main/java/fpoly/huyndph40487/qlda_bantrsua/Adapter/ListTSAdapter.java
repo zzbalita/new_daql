@@ -78,8 +78,7 @@ public class ListTSAdapter extends BaseAdapter {
         Glide.with(context)
                 .load(product.getImg())
                 .fitCenter()
-                .apply(new RequestOptions()
-                        .placeholder(R.drawable.ic_launcher_background) // Placeholder image
+                .apply(new RequestOptions() // Placeholder image
                         .error(R.drawable.ic_ttdg) // Error image in case of loading failure
                 )
                 .into(view3);
