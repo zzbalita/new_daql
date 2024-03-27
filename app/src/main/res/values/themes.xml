@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.QLDA_bantrsua" parent="Base.Theme.QLDA_bantrsua" />
+    <!--splas-->
+    <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splashcren</item>
+        <item name="android:statusBarColor" >@color/white</item>
+    </style>
 </resources>

@@ -2,6 +2,7 @@ package fpoly.huyndph40487.qlda_bantrsua.view;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,6 +20,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.FirebaseApp;
+
+
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -39,6 +43,8 @@ import fpoly.huyndph40487.qlda_bantrsua.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
     Toolbar toolbar;
+
+
     ViewFlipper viewFlipper;
     NavigationView navigationView;
     RecyclerView recyclerView;
@@ -65,8 +71,16 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         fragmentHomeBinding = FragmentHomeBinding.inflate(inflater, container, false);
+
+
+
+
         // Inflate the layout for this fragment
         NavHelper navHelper = new NavHelper((MainActivity) requireActivity(), R.id.navHost);
+        //
+        FirebaseApp.initializeApp(getContext());
+
+
         productDAO = new ProductDAO(getContext());
         modalBottomSheet = new ModalBottomSheet();
 
