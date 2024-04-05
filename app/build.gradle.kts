@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
+//    id ("com.google.gms.google-services")
 }
+
 android {
     namespace = "fpoly.huyndph40487.qlda_bantrsua"
     compileSdk = 34
@@ -35,6 +38,8 @@ android {
     dataBinding{
         enable = true
     }
+
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
@@ -43,6 +48,9 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation("androidx.activity:activity:1.8.0")
+    implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation("com.google.firebase:firebase-firestore:24.11.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.0")
     testImplementation("junit:junit:4.13.2")
@@ -52,4 +60,10 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment:2.7.7")
     implementation("androidx.navigation:navigation-ui:2.7.7")
     implementation("com.google.code.gson:gson:2.8.9")
+    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation("com.google.firebase:firebase-auth")
+
+    // Sử dụng BOM để quản lý các phiên bản Firebase
+
+
 }
