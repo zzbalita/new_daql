@@ -1,5 +1,5 @@
 package fpoly.huyndph40487.qlda_bantrsua.authorization.data;
-
+import com.google.android.gms.auth.api.identity.BeginSignInRequest;
 public class SocialSignIn {
     BeginSignInRequest googleSignInRequest;
 
