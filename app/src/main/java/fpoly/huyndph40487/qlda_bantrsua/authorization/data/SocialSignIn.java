@@ -1,4 +1,4 @@
-package fpoly.huyndph40487.qlda_bantrsua.authorization.data.model;
+package fpoly.huyndph40487.qlda_bantrsua.authorization.data;
 
 public class SocialSignIn {
     BeginSignInRequest googleSignInRequest;
