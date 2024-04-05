@@ -5,7 +5,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.view.LayoutInflater;
 
-import com.tanphuong.milktea.R;
+import fpoly.huyndph40487.qlda_bantrsua.R;
+
 
 public class LoadingDialog {
     // 2 objects activity and dialog
